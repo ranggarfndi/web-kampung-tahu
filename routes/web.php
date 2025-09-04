@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
 
 // Route::get('/', function () {
 //     return view('home');
@@ -9,5 +10,8 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', HomeController::class);
 
-// TAMBAHKAN RUTE BARU INI
 Route::get('/tentang', [HomeController::class, 'tentang']);
+
+// ROUTE BARU UNTUK HALAMAN PRODUK
+Route::get('/produk', [PageController::class, 'produk'])->name('produk');
+Route::get('/produk/{slug}', [PageController::class, 'produkDetail'])->name('produk.detail');
