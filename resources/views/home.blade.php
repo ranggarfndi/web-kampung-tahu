@@ -168,66 +168,50 @@
     {{-- ========= PAKET WISATA SECTION END ========= --}}
 
     {{-- ========= PENGURUS SECTION START ========= --}}
-    <section id="pengurus" class="py-16 sm:py-20 bg-white">
-        <div class="container mx-auto px-6 lg:px-12">
-            {{-- Judul Section --}}
-            <div class="text-center mb-12">
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-primary">Tim Kami</h2>
-                <p class="mt-2 text-lg text-text-light">Orang-orang di balik kualitas dan cita rasa Kampung Tahu.</p>
-            </div>
-
-            {{-- Grid untuk Kartu Pengurus --}}
-            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-
-                @forelse ($pengurus as $p)
-                    {{-- Kartu Pengurus --}}
-                    <div
-                        class="bg-background rounded-t-full rounded-b-2xl shadow-lg text-center overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="{{ asset('storage/' . $p->gambar) }}" alt="{{ $p->nama }}"
-                            class="w-full h-80 object-cover object-top">
-                        <div class="p-6">
-                            <h3 class="font-serif text-2xl font-semibold text-primary">
-                                {{ $p->nama }}
-                            </h3>
-
-                            {{-- Ikon Sosial Media --}}
-                            <div class="flex justify-center space-x-4 mt-4">
-                                @if ($p->instagram)
-                                    <a href="{{ $p->instagram }}" target="_blank" aria-label="Instagram"
-                                        class="text-text-light hover:text-primary transition-colors">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                            <path
-                                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.69 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.204-.012 3.584-.069 4.85c-.148 3.252-1.691 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.85-.069-3.252-.148-4.771-1.69-4.919-4.919-.058-1.265-.07-1.644-.07-4.85 0-3.204.012-3.584.069-4.849.149-3.252 1.668-4.771 4.919-4.919 1.266-.058 1.645-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.435.201-6.737 2.407-6.938 6.843-.058 1.28-.07 1.688-.07 4.948 0 3.26.014 3.667.072 4.947.201 4.435 2.407 6.737 6.843 6.938 1.28.058 1.688.07 4.948.07 3.259 0 3.667-.014 4.947-.072 4.435-.201 6.737-2.407 6.938-6.843.058-1.28.07-1.688.07-4.948 0-3.259-.014-3.667-.072-4.947-.201-4.435-2.407-6.737-6.843-6.938-1.28-.058-1.688-.07-4.948-.07z M12 8.138c-2.136 0-3.862 1.726-3.862 3.862s1.726 3.862 3.862 3.862 3.862-1.726 3.862-3.862-1.726-3.862-3.862-3.862zm0 6.162c-1.269 0-2.3-1.031-2.3-2.3s1.031-2.3 2.3-2.3 2.3 1.031 2.3 2.3-1.031 2.3-2.3 2.3zm4.87-6.726c-.53 0-.96.43-.96.96s.43.96.96.96.96-.43.96-.96-.43-.96-.96-.96z" />
-                                        </svg>
-                                    </a>
-                                @endif
-                                @if ($p->no_hp)
-                                    <a href="https://wa.me/{{ $p->no_hp }}" target="_blank" aria-label="WhatsApp"
-                                        class="text-text-light hover:text-primary transition-colors">
-                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                            <path
-                                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.457l-6.162 1.688a.625.625 0 01-.761-.761M6.512 17.585c1.584 1.041 3.457 1.621 5.432 1.621 5.448 0 9.89-4.442 9.891-9.891-.001-5.448-4.442-9.89-9.89-9.89-5.449 0-9.891 4.442-9.891 9.891 0 2.05.579 3.998 1.619 5.669l-1.053 3.85h3.85a.625.625 0 01.595.741" />
-                                        </svg>
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </div>
-                @empty
-                    <p class="col-span-3 text-center text-text-light">Saat ini belum ada data pengurus untuk ditampilkan.
-                    </p>
-                @endforelse
-            </div>
-
-            {{-- Tombol Lihat Selengkapnya --}}
-            <div class="text-center mt-12">
-                <a href="/pengurus" class="font-semibold text-primary hover:text-accent transition-colors text-lg">
-                    Lihat Seluruh Tim &rarr;
-                </a>
-            </div>
+<section id="pengurus" class="py-20 lg:py-24 bg-white">
+    <div class="container mx-auto px-6 lg:px-8">
+        {{-- Judul Section --}}
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary">Tim Kami</h2>
+            <p class="mt-4 text-lg text-text-dark opacity-70">
+                Kenali orang-orang berdedikasi di balik kualitas dan cita rasa produk Kampung Tahu.
+            </p>
         </div>
-    </section>
-    {{-- ========= PENGURUS SECTION END ========= --}}
+
+        {{-- Grid untuk Kartu Pengurus --}}
+        {{-- Menampilkan maksimal 3 pengurus sesuai controller --}}
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:max-w-4xl lg:mx-auto">
+
+            @forelse ($pengurus as $p)
+                {{-- Kartu Pengurus yang bisa diklik --}}
+                <a href="{{ route('pengurus.detail', $p->slug) }}" class="group block text-center">
+                    {{-- Gambar --}}
+                    <div class="relative w-full max-w-[200px] aspect-square mx-auto overflow-hidden rounded-full shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                        <img src="{{ asset('storage/' . $p->gambar) }}" alt="{{ $p->nama }}" class="w-full h-full object-cover object-top">
+                    </div>
+                    {{-- Nama & Jabatan --}}
+                    <div class="mt-4">
+                        <h3 class="font-serif text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                            {{ $p->nama }}
+                        </h3>
+                        <p class="text-text-dark opacity-70 text-sm mt-1">{{ $p->jabatan }}</p>
+                    </div>
+                </a>
+            @empty
+                <p class="col-span-3 text-center text-text-light">Saat ini belum ada data tim untuk ditampilkan.</p>
+            @endforelse
+            
+        </div>
+
+        {{-- Tombol Lihat Selengkapnya --}}
+        <div class="text-center mt-16">
+            <a href="{{ route('pengurus') }}" class="font-semibold text-primary hover:text-accent transition-colors text-lg group">
+                Lihat Seluruh Tim <span class="transition-transform duration-300 group-hover:ml-2">&rarr;</span>
+            </a>
+        </div>
+    </div>
+</section>
+{{-- ========= PENGURUS SECTION END ========= --}}
 
     {{-- ========= BERITA TERBARU SECTION START ========= --}}
     <section id="berita-slider-container" class="relative w-full h-screen group">
