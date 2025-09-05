@@ -60,4 +60,10 @@ class PageController extends Controller
         $paketsLain = PaketWisata::where('id', '!=', $paket->id)->latest()->take(4)->get(); // Ambil 4 paket lain
         return view('paket-wisata-detail', compact('paket', 'paketsLain'));
     }
+
+    // METHOD BARU UNTUK HALAMAN KONTAK
+    public function kontak()
+    {
+        return view('kontak');
+    }
 }
