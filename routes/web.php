@@ -22,3 +22,7 @@ Route::get('/paket-wisata/{slug}', [PageController::class, 'paketWisataDetail'])
 
 // ROUTE BARU UNTUK HALAMAN KONTAK
 Route::get('/kontak', [PageController::class, 'kontak'])->name('kontak');
+
+// ROUTE BARU UNTUK HALAMAN PENGURUS
+Route::get('/pengurus', [PageController::class, 'pengurus'])->name('pengurus');
+Route::get('/pengurus/{slug}', [PageController::class, 'pengurusDetail'])->name('pengurus.detail');
