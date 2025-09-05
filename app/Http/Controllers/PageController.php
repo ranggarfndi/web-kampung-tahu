@@ -80,4 +80,19 @@ class PageController extends Controller
         $p = Pengurus::where('slug', $slug)->firstOrFail(); // Cari pengurus berdasarkan slug
         return view('pengurus-detail', compact('p'));
     }
+
+    // METHOD BARU UNTUK HALAMAN DAFTAR BERITA
+    public function berita()
+    {
+        $beritas = Berita::latest()->paginate(6); // Menampilkan 6 berita per halaman
+        return view('berita', compact('beritas'));
+    }
+
+    // METHOD BARU UNTUK HALAMAN DETAIL BERITA
+    public function beritaDetail($slug)
+    {
+        $berita = Berita::where('slug', $slug)->firstOrFail();
+        $beritasLain = Berita::where('id', '!=', $berita->id)->latest()->take(4)->get();
+        return view('berita-detail', compact('berita', 'beritasLain'));
+    }
 }
