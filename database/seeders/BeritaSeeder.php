@@ -16,6 +16,6 @@ class BeritaSeeder extends Seeder
     {
         // Perintah ini akan menggunakan BeritaFactory untuk membuat 20 data berita.
         // Anda bisa mengubah angka 20 sesuai kebutuhan.
-        \App\Models\Berita::factory(20)->create();
+        \App\Models\Berita::factory(10)->create();
     }
 }

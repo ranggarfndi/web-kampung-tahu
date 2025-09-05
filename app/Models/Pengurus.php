@@ -10,20 +10,10 @@ class Pengurus extends Model
 {
     use HasFactory;
 
-    /**
-     * Nama tabel yang terhubung dengan model ini.
-     * @var string
-     */
-    protected $table = 'penguruses'; // <-- TAMBAHKAN BARIS INI
+    protected $table = 'penguruses'; // tabel yang dipakai
+    protected $guarded = ['id'];     // semua field bisa mass-assignment kecuali id
 
-    /**
-     * Izinkan semua kolom diisi massal kecuali 'id'.
-     */
-    protected $guarded = ['id'];
-
-    /**
-     * Method untuk otomatisasi slug.
-     */
+    // otomatis generate slug dari nama
     protected static function boot()
     {
         parent::boot();

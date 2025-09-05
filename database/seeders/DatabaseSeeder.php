@@ -23,8 +23,9 @@ class DatabaseSeeder extends Seeder
         // PANGGIL BERITA SEEDER DI SINI
         $this->call([
             BeritaSeeder::class,
-            // Anda bisa menambahkan seeder lain di sini nanti, contoh:
-            // ProdukSeeder::class,
+            ProdukSeeder::class,
+            PaketWisataSeeder::class,
+            PengurusSeeder::class,
         ]);
     }
 }
