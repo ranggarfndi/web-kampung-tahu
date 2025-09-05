@@ -26,3 +26,7 @@ Route::get('/kontak', [PageController::class, 'kontak'])->name('kontak');
 // ROUTE BARU UNTUK HALAMAN PENGURUS
 Route::get('/pengurus', [PageController::class, 'pengurus'])->name('pengurus');
 Route::get('/pengurus/{slug}', [PageController::class, 'pengurusDetail'])->name('pengurus.detail');
+
+// ROUTE BARU UNTUK HALAMAN BERITA
+Route::get('/berita', [PageController::class, 'berita'])->name('berita');
+Route::get('/berita/{slug}', [PageController::class, 'beritaDetail'])->name('berita.detail');
