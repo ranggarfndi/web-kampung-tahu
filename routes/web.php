@@ -19,3 +19,6 @@ Route::get('/produk/{slug}', [PageController::class, 'produkDetail'])->name('pro
 // ROUTE BARU UNTUK HALAMAN PAKET WISATA
 Route::get('/paket-wisata', [PageController::class, 'paketWisata'])->name('paket-wisata');
 Route::get('/paket-wisata/{slug}', [PageController::class, 'paketWisataDetail'])->name('paket-wisata.detail');
+
+// ROUTE BARU UNTUK HALAMAN KONTAK
+Route::get('/kontak', [PageController::class, 'kontak'])->name('kontak');
