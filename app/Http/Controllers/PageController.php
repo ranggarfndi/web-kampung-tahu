@@ -45,4 +45,19 @@ class PageController extends Controller
         
         return view('produk-detail', compact('produk', 'produksLain'));
     }
+
+    // METHOD BARU UNTUK HALAMAN DAFTAR PAKET WISATA
+    public function paketWisata()
+    {
+        $paket_wisatas = PaketWisata::latest()->paginate(6); // Menampilkan 6 paket per halaman
+        return view('paket-wisata', compact('paket_wisatas'));
+    }
+
+    // METHOD BARU UNTUK HALAMAN DETAIL PAKET WISATA
+    public function paketWisataDetail($slug)
+    {
+        $paket = PaketWisata::where('slug', $slug)->firstOrFail(); // Cari paket berdasarkan slug
+        $paketsLain = PaketWisata::where('id', '!=', $paket->id)->latest()->take(4)->get(); // Ambil 4 paket lain
+        return view('paket-wisata-detail', compact('paket', 'paketsLain'));
+    }
 }
