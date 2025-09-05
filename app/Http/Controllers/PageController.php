@@ -66,4 +66,18 @@ class PageController extends Controller
     {
         return view('kontak');
     }
+
+    // METHOD BARU UNTUK HALAMAN DAFTAR PENGURUS
+    public function pengurus()
+    {
+        $pengurus = Pengurus::latest()->paginate(12); // Menampilkan 12 pengurus per halaman
+        return view('pengurus', compact('pengurus'));
+    }
+
+    // METHOD BARU UNTUK HALAMAN DETAIL PENGURUS
+    public function pengurusDetail($slug)
+    {
+        $p = Pengurus::where('slug', $slug)->firstOrFail(); // Cari pengurus berdasarkan slug
+        return view('pengurus-detail', compact('p'));
+    }
 }
