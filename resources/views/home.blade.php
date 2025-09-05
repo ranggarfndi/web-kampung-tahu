@@ -187,7 +187,6 @@
 
     {{-- ========= BERITA TERBARU SECTION START ========= --}}
     <section id="berita" class="py-16 bg-gray-50 lg:py-24">
-        {{-- max-w-7xl ditambahkan di sini --}}
         <div class="container max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto mb-12 text-center lg:mb-16">
                 <h2 class="font-serif text-3xl font-bold md:text-4xl text-primary">Kabar Terbaru dari Kami</h2>
@@ -216,14 +215,15 @@
                         </div>
                     </a>
 
-                    {{-- Daftar Berita Lainnya (diubah agar responsif di tablet) --}}
-                    <div class="col-span-1 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-1">
+                    {{-- Daftar Berita Lainnya (Sidebar Kanan) --}}
+                    <div class="col-span-1 space-y-8">
                         @foreach ($beritas->skip(1)->take(2) as $berita)
+                            {{-- Kartu Berita Sidebar (Desain Baru) --}}
                             <a href="{{ route('berita.detail', $berita->slug) }}"
-                                class="flex items-center gap-4 p-4 overflow-hidden transition-all duration-300 bg-white rounded-xl shadow-lg group hover:shadow-xl hover:-translate-y-1">
+                                class="block overflow-hidden transition-all duration-300 bg-white rounded-xl shadow-lg group hover:shadow-xl hover:-translate-y-1">
                                 <img src="{{ asset('storage/' . $berita->thumbnail) }}" alt="{{ $berita->judul }}"
-                                    class="object-cover w-1/3 rounded-lg aspect-square">
-                                <div class="w-2/3">
+                                    class="object-cover w-full transition-transform duration-300 aspect-video group-hover:scale-105">
+                                <div class="p-5">
                                     @if ($berita->created_at)
                                         <p class="mb-1 text-xs opacity-60 text-text-dark">
                                             {{ $berita->created_at->format('d F Y') }}</p>

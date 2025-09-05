@@ -8,23 +8,27 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('beritas', function (Blueprint $table) {
-        $table->id();
-        $table->string('thumbnail');
-        $table->string('judul');
-        $table->string('slug')->unique();
-        $table->longText('isi');
-        $table->timestamps();
+            $table->id();
+            $table->string('thumbnail');
+            $table->string('judul');
+            $table->string('slug')->unique(); // PASTIKAN BARIS INI ADA
+            $table->text('isi');
+            $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('beritas');
     }
