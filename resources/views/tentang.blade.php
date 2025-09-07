@@ -21,7 +21,7 @@
                 {{-- Kolom Gambar Hero --}}
                 <div class="relative flex items-center justify-center order-first lg:order-last">
                     <div class="absolute w-4/5 h-4/5 transform -rotate-6 bg-secondary rounded-3xl"></div>
-                    <img src="{{ asset('images/tentang-banner.jpg') }}" alt="Produk Unggulan Kampung Tahu"
+                    <img src="{{ asset('images/tentang-kami.jpg') }}" alt="Produk Unggulan Kampung Tahu"
                         class="relative z-10 w-full max-w-md shadow-2xl rounded-3xl">
                 </div>
             </div>
@@ -36,7 +36,7 @@
             <div class="relative grid items-center grid-cols-1 lg:grid-cols-5 gap-8">
                 {{-- Kolom Gambar (3/5 bagian) --}}
                 <div class="lg:col-span-3">
-                    <img src="{{ asset('images/sejarah-image.jpg') }}" alt="Proses pembuatan tahu tradisional"
+                    <img src="{{ asset('images/tentang-tahu.jpg') }}" alt="Proses pembuatan tahu tradisional"
                         class="object-cover w-full h-auto shadow-xl aspect-video rounded-2xl">
                 </div>
                 {{-- Kolom Teks (2/5 bagian) dengan posisi tumpang tindih --}}

@@ -73,7 +73,7 @@
                 {{-- Kolom Kanan: Peta --}}
                 <div class="w-full h-96 lg:h-full rounded-2xl shadow-2xl overflow-hidden min-h-[500px]">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15929.117983656157!2d98.66213087851916!3d3.585250435422891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131c9a7525385%3A0x1d381c1f435f3b4c!2sMedan%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1725520627670!5m2!1sid!2sid" {{-- Ganti dengan embed Google Maps Anda --}}
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.892150013096!2d98.4529900747325!3d3.612140996361964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3030d7c088ff8261%3A0xd3881911b09e8b29!2sRumah%20Ramah%20Anak%20%26%20Galeri%20Industri%20Perempuan%20Kota%20Binjai%20(Yayasan%20AKSI%20Baik)!5e0!3m2!1sid!2sid!4v1757070194435!5m2!1sid!2sid" {{-- Ganti dengan embed Google Maps Anda --}}
                         width="100%" 
                         height="100%" 
                         style="border:0;" 
