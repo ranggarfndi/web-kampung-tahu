@@ -76,7 +76,7 @@
 
         {{-- Footer bottom --}}
         <div class="border-t border-accent/20 mt-10 pt-6 text-center text-sm text-text-light">
-            <p>&copy; {{ date('Y') }} <span class="text-accent">Kampung Tahu</span>. Didesain dengan ❤️ di Medan.</p>
+            <p>&copy; {{ date('Y') }} <span class="text-accent">Kampung Tahu</span> Binjai</p>
         </div>
     </div>
 </footer>

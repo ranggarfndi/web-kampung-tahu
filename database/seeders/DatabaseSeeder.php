@@ -16,16 +16,18 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+            'name' => 'admin',
+            'email' => 'admin@kampungtahu.com',
+            'password' => bcrypt('admin'),
+            'is_admin' => true,
         ]);
 
         // PANGGIL BERITA SEEDER DI SINI
-        $this->call([
-            BeritaSeeder::class,
-            ProdukSeeder::class,
-            PaketWisataSeeder::class,
-            PengurusSeeder::class,
-        ]);
+        // $this->call([
+        //     BeritaSeeder::class,
+        //     ProdukSeeder::class,
+        //     PaketWisataSeeder::class,
+        //     PengurusSeeder::class,
+        // ]);
     }
 }
