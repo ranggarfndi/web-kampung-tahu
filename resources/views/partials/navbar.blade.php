@@ -22,10 +22,10 @@
             <a href="/kontak" class="nav-link {{ request()->is('kontak') ? 'active' : '' }}">Kontak</a>
 
             {{-- Dibedakan untuk menu Admin --}}
-            <a href="/admin" target="blank"
+            {{-- <a href="/admin" target="blank"
                 class="ml-4 flex items-center gap-2 bg-yellow-400 text-black px-3 py-1.5 rounded-lg font-semibold shadow hover:bg-yellow-500 transition">
                 Admin
-            </a>
+            </a> --}}
         </div>
 
         {{-- Tombol Mobile Menu (Diubah dari lg:hidden menjadi xl:hidden) --}}
@@ -63,10 +63,10 @@
                 class="block px-6 py-3 text-lg text-text-dark hover:bg-background {{ request()->is('berita*') ? 'font-semibold text-primary' : '' }}">Berita</a>
             <a href="/kontak"
                 class="block px-6 py-3 text-lg text-text-dark hover:bg-background {{ request()->is('kontak') ? 'font-semibold text-primary' : '' }}">Kontak</a>
-            <a href="/admin" target="blank"
+            {{-- <a href="/admin" target="blank"
                 class="mt-2 mx-6 block text-center px-4 py-3 bg-yellow-400 text-black font-semibold rounded-lg shadow hover:bg-yellow-500 transition">
                 Admin
-            </a>
+            </a> --}}
         </div>
     </div>
 </nav>
