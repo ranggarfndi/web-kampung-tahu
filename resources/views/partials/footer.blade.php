@@ -37,7 +37,7 @@
                                 d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 004.6-5.187c1.555-2.518 2.46-5.513 2.46-8.687C19.5 5.57 16.03 2 11.75 2S4 5.57 4 10.012c0 3.175.904 6.17 2.46 8.687a16.975 16.975 0 004.6 5.187zM12 13.25a3.25 3.25 0 100-6.5 3.25 3.25 0 000 6.5z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <span>JF64+V53, Suka Maju, Kec. Binjai Bar., Kota Binjai, Sumatera Utara 20716</span>
+                        <span>Jl. Sukun, Kel. Suka Maju, Kec. Binjai Bar., Kota Binjai, Sumatera Utara, 20716</span>
                     </li>
 
                     {{-- Telepon dengan Ikon Phone yang Benar --}}
@@ -47,7 +47,15 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
-                        <a href="tel:+6281376973928" class="hover:text-accent transition-colors">+62 813-7697-3928</a>
+                        <a href="tel:+6281376973928" class="hover:text-accent transition-colors">(+62) 813-7697-3928</a>
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-3 text-accent flex-shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <a href="tel:+6281370011511" class="hover:text-accent transition-colors">(+62) 813-7001-1511</a>
                     </li>
                 </ul>
             </div>

@@ -23,11 +23,17 @@
                 {{-- Kolom Teks Hero --}}
                 <div class="text-center lg:text-left">
                     <h1 class="font-serif text-4xl font-extrabold leading-tight md:text-5xl lg:text-6xl text-primary">
-                        Warisan Rasa, Dedikasi Tanpa Batas.
+                        Latar Belakang Kampung Tahu Binjai
                     </h1>
-                    <p class="max-w-xl mx-auto mt-6 text-lg md:text-xl opacity-80 text-text-dark lg:mx-0">
-                        Selamat datang di Kampung Tahu, tempat tradisi pembuatan tahu terbaik bertemu dengan inovasi untuk
-                        menciptakan cita rasa yang tak terlupakan.
+                    <p class="max-w-xl mx-auto mt-6 text-md md:text-xl opacity-80 text-text-dark lg:mx-0 italic">
+                        Kampung Tahu Binjai berdiri tidak lepas dari latar belakangnya yang
+                        sudah dikenal oleh masyarakat luas sebagai sentra industri tahu di Kota
+                        Binjai. Dasar dari pengalaman dan latar belakang yang dimiliki, kemudian
+                        lahirlah inisiatif Kampung Tahu Binjai yang diciptakan agar kedepannya
+                        industri tahu di Kota Binjai dapat dikenal dan memiliki indentitas yang
+                        legal. Tahu - tahu yang sudah diwariskan sejak puluhan tahun, menjadi
+                        bukti nyata bahwa Kampung Tahu Binjai mampu berdiri dan
+                        mempertahankan diri di era globalisasi modern.
                     </p>
                 </div>
                 {{-- Kolom Gambar Hero --}}
@@ -53,16 +59,18 @@
                 {{-- Kolom Teks (2/5 bagian) dengan posisi tumpang tindih --}}
                 <div class="z-10 lg:col-span-2 lg:-ml-16">
                     <div class="p-8 bg-white shadow-lg lg:p-10 rounded-2xl">
-                        <h2 class="font-serif text-3xl font-bold md:text-4xl text-primary mb-5">Awal Mula Cerita Kami</h2>
+                        <h2 class="font-serif text-3xl font-bold md:text-4xl text-primary mb-5">Tentang Kami</h2>
                         <div class="space-y-4 leading-relaxed opacity-80 text-text-dark">
                             <p>
-                                Lahir dari industri rumahan pada tahun 1980, Kampung Tahu adalah buah dari kerja keras dan
-                                resep turun-temurun. Kami memulai dengan komitmen sederhana: menghasilkan tahu terbaik dari
-                                kedelai pilihan.
+                                Kampung Tahu Binjai lahir disebuah jalan lorong kecil, yang memiliki keunikan dan potensi.
+                                Industri yang sudah terjaga dengan turun temurun diwariskan untuk melestarikan pembuatan
+                                tahu yang masih tradisional.
                             </p>
                             <p>
-                                Kini, kami telah berkembang menjadi sebuah komunitas pengrajin yang berdedikasi melestarikan
-                                warisan kuliner sekaligus menjadi destinasi wisata edukasi yang membanggakan.
+                                Sebuah jalan lorong kecil yang tidak memiliki identitas, seiring berjalannya waktu akhirnya
+                                kami menemukan identitas dengan wajah baru dan dikenal banyak orang dengan julukan Kampung
+                                Tahu Binjai. Kami ciptakan tahu-tahu berkualitas untuk dirasakan orang banyak dengan cita
+                                rasa khas Tahu Binjai.
                             </p>
                         </div>
                     </div>
@@ -99,8 +107,11 @@
                         <h3 class="font-serif text-2xl font-bold text-primary">Visi Kami</h3>
                     </div>
                     <p class="leading-relaxed opacity-80 text-text-dark">
-                        Menjadi pusat pelestarian tradisi tahu berkualitas yang dikenal secara nasional dan menjadi ikon
-                        agrowisata edukatif terdepan di Indonesia.
+                        “Menjadikan Kampung Tahu Binjai sebagai pusat unggulan kuliner dan
+                        ekonomi kreatif berbasis tahu yang inovatif, berdaya saing, berkelanjutan,
+                        serta memberikan manfaat sosial, budaya, dan ekonomi bagi
+                        masyarakat.
+                        ”
                     </p>
                 </div>
                 {{-- Kartu Misi --}}
@@ -117,14 +128,25 @@
                         <h3 class="font-serif text-2xl font-bold text-primary">Misi Kami</h3>
                     </div>
                     <ul class="space-y-3 opacity-80 text-text-dark">
-                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span><span>Menjaga
-                                <strong>kualitas tertinggi</strong> dalam setiap potongan tahu.</span></li>
-                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span><span>Memberdayakan
-                                <strong>komunitas pengrajin lokal</strong> secara berkelanjutan.</span></li>
-                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span><span>Menyediakan
-                                <strong>pengalaman wisata edukasi</strong> yang tak terlupakan.</span></li>
-                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span><span>Terus
-                                <strong>berinovasi</strong> dalam menciptakan produk turunan tahu.</span></li>
+                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span>
+                            <span><strong>Kualitas (Quality):</strong> Menjaga standar kebersihan, rasa, dan mutu produk tahu agar tetap dipercaya konsumen.</span>
+                        </li>
+                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span>
+                            <span><strong>Inovasi (Innovation):</strong> Harus menghadirkan olahan tahu baru yang mengikuti tren tanpa meninggalkan cita rasa khas Binjai.</span>
+                        </li>
+                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span>
+                            <span><strong>Pemberdayaan (Empowerment):</strong> Memberi ruang bagi masyarakatlokal untuk tumbuh bersama melalui usaha berbasis tahu.</span>
+                        </li>
+                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span>
+                            <span><strong>Kebersamaan (Community):</strong> Membangun solidaritas warga, Kolaborasi UMKM, serta gotong royong demi kemajuan Kampung Tahu Binjai.</span>
+                        </li>
+                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span>
+                            <span><strong>Kebersamaan (Community):</strong> Mengelola sumber daya dan limbah tahu secara ramah lingkungan serta berorientasi jangka panjang.</span>
+                        </li>
+                        <li class="flex items-start"><span class="mt-1 mr-3 text-accent">✓</span>
+                            <span><strong>Identitas Lokal (Local Pride):</strong> Menjadikan tahu sebagai ikon khas Binjai yang membanggakan daerah di tingkat nasional maupun internasional.</span>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -189,7 +211,7 @@
     {{-- ========= NILAI KAMI END ========= --}}
 
     {{-- ========= CALL TO ACTION START ========= --}}
-    <section class="bg-gradient-to-r from-primary to-yellow-600">
+    <section class="bg-gradient-to-r from-secondary to-yellow-700">
         <div class="container max-w-7xl px-4 py-16 mx-auto text-center sm:px-6 lg:px-8">
             <h2 class="font-serif text-3xl font-bold text-white">Siap Mencicipi Kelezatan Tahu Kami?</h2>
             <p class="max-w-2xl mx-auto mt-4 text-lg text-white opacity-90">

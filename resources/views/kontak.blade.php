@@ -69,7 +69,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold text-primary">Telepon</h3>
+                                <h3 class="text-lg font-bold text-primary">Telephone</h3>
                                 <a href="https://wa.me/{{ config('app.wa_phone_number') }}" target="_blank"
                                     class="text-text-dark opacity-80 text-sm mt-1 hover:text-accent transition-colors">+{{ config('app.wa_phone_number') }}
                                     (WhatsApp)</a>
